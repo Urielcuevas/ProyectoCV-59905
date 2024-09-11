@@ -88,11 +88,8 @@ header h2{
     font-family: couture;
 }
 
-.sobremi1 a{
-    font-size: 3vh;
-    margin: 25px;
-    margin-right: 80px;
-    font-family: couture;
+.btn {
+    margin-right: 100px;
 }
 
 /*parte proyectos index*/
@@ -326,7 +323,7 @@ footer .botonwpp{
     position: fixed;
     width: 55px;
     height: 55px;
-    line-height: 55px;
+    line-height: 1px;
     bottom: 30px;
     right: 30px;
     background-color: rgb(50, 205, 53);
