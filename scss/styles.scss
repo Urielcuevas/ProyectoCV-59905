@@ -12,7 +12,7 @@ body.principal {
     color: rgb(255, 255, 255);
 }
 
-
+/*HOME*/
 .index {
     display: flex;
     flex-direction: column;
@@ -87,78 +87,38 @@ body.principal {
 }
 
 
-
-
-
-
-
-
-
-
-
 /*PROYECTOS*/
 
-.contenedor{
-    margin: 80px auto;
-    width: 90%;
-    height: 1000px;
+.contenedor { 
+    margin: 10px auto; 
+    width: 90%; 
     max-width: 1500px;
-
-    
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr; 
+    grid-auto-rows: auto; 
+    gap: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+    div {
+        display: contents; 
+    }
+
+    img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    h3 {
+        font-family: couture;
+        font-size: 2rem; /* Tamaño de fuente base en rem */
+    }
+
 }
 
-.proyectos1{
-    display: flex;
-    align-items: center;
-  
-}
 
-.proyectos1 img{
-    width: 50%;
-    margin: 20px;
-}
 
-.proyectos1 h3{
-    display: flex;
-    font-family: couture;
-}
 
-/*DIV2*/
-.proyectos2{
-    display: flex;
-    align-items: center;
-  
-}
-
-.proyectos2 img{
-    width: 50%;
-    margin: 20px;
-}
-
-.proyectos2 h3{
-    display: flex;
-    font-family: couture;
-}
-
-/*DIV3*/
-.proyectos3{
-    display: flex;
-    align-items: center;
-  
-}
-
-.proyectos3 img{
-    width: 50%;
-    margin: 20px;
-}
-
-.proyectos3 h3{
-    display: flex;
-    font-family: couture;
-}
 
 
 /*SERVICIOS*/
@@ -200,7 +160,7 @@ body.principal {
 .sobremih2{
     display: flex;
     justify-content: center;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: couture;
 }
 
@@ -245,7 +205,7 @@ body.principal {
 .contacto1 h2{
     display: flex;
     justify-content: center;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: couture;
 }
 
@@ -278,13 +238,22 @@ body.principal {
 }
 
 /*FOOTER*/
+
+footer {
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
 footer .botonwpp{
     position: fixed;
     width: 55px;
     height: 55px;
     line-height: 1px;
     bottom: 30px;
-    right: 30px;
+    right: 40px;
     background-color: rgb(50, 205, 53);
     border-radius: 50px;
     text-align: center;
@@ -303,4 +272,30 @@ footer .botonwpp{
     margin-top: 15%;
   }
 
+.social-icon {
+    margin: 0 15px;
+    transition: transform 0.3s;
+}
 
+.social-icon img {
+    width: 48px;
+    height: 48px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+
+/*PROYECTOS*/
+
+@media (max-width: 1550px) {
+    .contenedor {
+        grid-template-columns: 1fr; 
+        margin-top: 40px;
+        text-align: center;
+        gap: 80px;
+    }
+    
+
+}
