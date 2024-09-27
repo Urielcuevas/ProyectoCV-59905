@@ -1,0 +1,62 @@
+/*SOBRE MI*/
+.sobremicuerpo {
+    background-color:   $color-principal;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+
+
+
+}
+
+.sobre-mi {
+    margin-bottom: 20px;
+
+    img {
+        @include base(250px, 270px);
+        border-radius: 50%; 
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    }
+    
+    h1 {
+        font-family: 'Couture', cursive; 
+        color: #b5b5b5;
+        margin-top: 10px;
+    }
+
+    .descripcion {
+        margin: 20px 0;
+        font-size: 1.2em; 
+        color: #b5b5b5;
+    }
+
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    margin: 20px 0; 
+
+    .column {
+        padding: 15px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    }
+    
+    h2 {
+        color: #b5b5b5;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        color: #b5b5b5;
+        font-size: 1em;
+    }
+}
+
+
+

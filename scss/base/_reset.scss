@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: couture;
-    src: url(../fonts/couture-bld.otf);
+body.principal {
+    background-image: url(../assets/fondo/4k-close-up-shot-programming-tag-code-on-pc-monitor-scroll-down-background-concept-for-programming-and-coding-web-development-video.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 100%; 
+    margin: 0; 
+    color: rgb(255, 255, 255);
 }
 
